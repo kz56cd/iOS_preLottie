@@ -83,6 +83,7 @@
 		E6C7BF481EEE7C12002EE80E /* preLottie */ = {
 			isa = PBXGroup;
 			children = (
+				E6D6374F1EEE84C0009041DF /* images */,
 				E6D6374D1EEE8130009041DF /* data.json */,
 				E6C7BF491EEE7C12002EE80E /* AppDelegate.swift */,
 				E6C7BF4B1EEE7C12002EE80E /* ViewController.swift */,
@@ -109,6 +110,13 @@
 				E6D6374A1EEE7F8C009041DF /* Lottie.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6D6374F1EEE84C0009041DF /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

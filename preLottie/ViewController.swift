@@ -10,9 +10,6 @@ import UIKit
 import Lottie
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var lottieView: LOTAnimationView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
