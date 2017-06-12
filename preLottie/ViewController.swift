@@ -7,17 +7,25 @@
 //
 
 import UIKit
+import Lottie
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lottieView: LOTAnimationView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let animationView = LOTAnimationView(name: "data")
+        self.view.addSubview(animationView!)
+    
+        animationView?.play(completion: { (finished) in
+            print("something animated")
+        })
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
 

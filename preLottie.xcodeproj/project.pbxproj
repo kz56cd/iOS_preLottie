@@ -13,6 +13,8 @@
 		E6C7BF511EEE7C12002EE80E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C7BF501EEE7C12002EE80E /* Assets.xcassets */; };
 		E6C7BF541EEE7C12002EE80E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6C7BF521EEE7C12002EE80E /* LaunchScreen.storyboard */; };
 		E6C7BF5F1EEE7C13002EE80E /* preLottieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C7BF5E1EEE7C13002EE80E /* preLottieTests.swift */; };
+		E6D6374B1EEE7F8C009041DF /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D6374A1EEE7F8C009041DF /* Lottie.framework */; };
+		E6D6374E1EEE8130009041DF /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = E6D6374D1EEE8130009041DF /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		E6C7BF5A1EEE7C13002EE80E /* preLottieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = preLottieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C7BF5E1EEE7C13002EE80E /* preLottieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = preLottieTests.swift; sourceTree = "<group>"; };
 		E6C7BF601EEE7C13002EE80E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6D6374A1EEE7F8C009041DF /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
+		E6D6374D1EEE8130009041DF /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6D6374B1EEE7F8C009041DF /* Lottie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +67,7 @@
 				E6C7BF481EEE7C12002EE80E /* preLottie */,
 				E6C7BF5D1EEE7C13002EE80E /* preLottieTests */,
 				E6C7BF471EEE7C12002EE80E /* Products */,
+				E6D637491EEE7F8C009041DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +83,7 @@
 		E6C7BF481EEE7C12002EE80E /* preLottie */ = {
 			isa = PBXGroup;
 			children = (
+				E6D6374D1EEE8130009041DF /* data.json */,
 				E6C7BF491EEE7C12002EE80E /* AppDelegate.swift */,
 				E6C7BF4B1EEE7C12002EE80E /* ViewController.swift */,
 				E6C7BF4D1EEE7C12002EE80E /* Main.storyboard */,
@@ -96,6 +103,14 @@
 			path = preLottieTests;
 			sourceTree = "<group>";
 		};
+		E6D637491EEE7F8C009041DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6D6374A1EEE7F8C009041DF /* Lottie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +121,7 @@
 				E6C7BF421EEE7C12002EE80E /* Sources */,
 				E6C7BF431EEE7C12002EE80E /* Frameworks */,
 				E6C7BF441EEE7C12002EE80E /* Resources */,
+				E6D6374C1EEE7FA0009041DF /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -184,6 +200,7 @@
 				E6C7BF541EEE7C12002EE80E /* LaunchScreen.storyboard in Resources */,
 				E6C7BF511EEE7C12002EE80E /* Assets.xcassets in Resources */,
 				E6C7BF4F1EEE7C12002EE80E /* Main.storyboard in Resources */,
+				E6D6374E1EEE8130009041DF /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +212,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E6D6374C1EEE7FA0009041DF /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Lottie.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E6C7BF421EEE7C12002EE80E /* Sources */ = {
@@ -344,6 +379,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FJ4U7R259J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = preLottie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ohako.inc.preLottie;
@@ -357,6 +396,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FJ4U7R259J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = preLottie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ohako.inc.preLottie;
@@ -414,6 +457,7 @@
 				E6C7BF651EEE7C13002EE80E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E6C7BF661EEE7C13002EE80E /* Build configuration list for PBXNativeTarget "preLottieTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +466,7 @@
 				E6C7BF681EEE7C13002EE80E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
