@@ -14,7 +14,7 @@
 		E6C7BF541EEE7C12002EE80E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6C7BF521EEE7C12002EE80E /* LaunchScreen.storyboard */; };
 		E6C7BF5F1EEE7C13002EE80E /* preLottieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C7BF5E1EEE7C13002EE80E /* preLottieTests.swift */; };
 		E6D6374B1EEE7F8C009041DF /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D6374A1EEE7F8C009041DF /* Lottie.framework */; };
-		E6D6374E1EEE8130009041DF /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = E6D6374D1EEE8130009041DF /* data.json */; };
+		E6D637511EEE8EB8009041DF /* loader_ring.json in Resources */ = {isa = PBXBuildFile; fileRef = E6D637501EEE8EB8009041DF /* loader_ring.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,7 @@
 		E6C7BF5E1EEE7C13002EE80E /* preLottieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = preLottieTests.swift; sourceTree = "<group>"; };
 		E6C7BF601EEE7C13002EE80E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6D6374A1EEE7F8C009041DF /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
-		E6D6374D1EEE8130009041DF /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		E6D637501EEE8EB8009041DF /* loader_ring.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader_ring.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +83,7 @@
 		E6C7BF481EEE7C12002EE80E /* preLottie */ = {
 			isa = PBXGroup;
 			children = (
-				E6D6374F1EEE84C0009041DF /* images */,
-				E6D6374D1EEE8130009041DF /* data.json */,
+				E6D637501EEE8EB8009041DF /* loader_ring.json */,
 				E6C7BF491EEE7C12002EE80E /* AppDelegate.swift */,
 				E6C7BF4B1EEE7C12002EE80E /* ViewController.swift */,
 				E6C7BF4D1EEE7C12002EE80E /* Main.storyboard */,
@@ -110,13 +109,6 @@
 				E6D6374A1EEE7F8C009041DF /* Lottie.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E6D6374F1EEE84C0009041DF /* images */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,9 +198,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6C7BF541EEE7C12002EE80E /* LaunchScreen.storyboard in Resources */,
+				E6D637511EEE8EB8009041DF /* loader_ring.json in Resources */,
 				E6C7BF511EEE7C12002EE80E /* Assets.xcassets in Resources */,
 				E6C7BF4F1EEE7C12002EE80E /* Main.storyboard in Resources */,
-				E6D6374E1EEE8130009041DF /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

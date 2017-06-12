@@ -13,10 +13,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let animationView = LOTAnimationView(name: "data")
-        self.view.addSubview(animationView!)
+        //MEMO: template json data is here: https://www.lottiefiles.com/315-loader-ring
+        let animationView = LOTAnimationView(name: "loader_ring")
+        self.view.addSubview(animationView)
     
-        animationView?.play(completion: { (finished) in
+        animationView.play(completion: { (finished) in
             print("something animated")
         })
     }
